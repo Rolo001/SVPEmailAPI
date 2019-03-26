@@ -2,6 +2,8 @@
 {
     using System;
     using System.Diagnostics;
+    using System.ComponentModel.DataAnnotations;
+
     public class DispatchEmailRequest
     {
         public DispatchEmailRequest(string recipientName, string recipientEmail)
@@ -17,18 +19,24 @@
 
         internal bool IsValid()
         {
-            //throw new NotImplementedException();
-            //validations:
-            return false; //temporary return data
+            throw new NotImplementedException();
+            //why not use data anotations
+            // specification pattern
+            
+
+            //return false; //temporary return data
         }
 
         internal string[] GetErrors()
         {
+            //get error messages from validations?
+
             //error template
             Console.WriteLine("get error method: DispatchEmailRequest");
             return new string[] { "error", "GetError method" };
         }
 
+        //data anotation to controller (properties)
         public string Subject { get; private set; }
         public string RecipientEmail { get; private set; }
         public string RecpientName { get; private set; }
