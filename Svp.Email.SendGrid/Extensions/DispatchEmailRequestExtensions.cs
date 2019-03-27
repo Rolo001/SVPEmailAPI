@@ -4,6 +4,8 @@
     using Svp.Email.Classes;
     public static class DispatchEmailRequestExtensions
     {
+
+        //could we place validations here?
         public static SendGridMessage ToSendGridMessage(this DispatchEmailRequest request)
         {
             var result = new SendGridMessage();

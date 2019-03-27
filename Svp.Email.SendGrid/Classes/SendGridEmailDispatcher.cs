@@ -25,20 +25,7 @@
 
         public async Task<DispatchEmailResponse> Dispatch(DispatchEmailRequest request)
         {
-            //this bloc needs SR  --> used extension method DispatchEmailRequestExtensions
-
-            //var message = new SendGridMessage()
-            //{
-            //    From = new EmailAddress(),
-            //    ReplyTo = new EmailAddress(),
-            //    Subject = request.Subject,
-            //    PlainTextContent = request.Content
-            //};
-
-            //message.AddTo(request.RecipientEmail, request.RecpientName);
-            //var response = await this.client.SendEmailAsync(message);
-            //return new DispatchEmailResponse(request);
-            var result = DispatchEmailResponse.CreateFailed(request);
+            var result = DispatchEmailResponse.CreateFailed(request); //purpose?
 
             try
             {
@@ -62,3 +49,16 @@
         }
     }
 }
+            //this bloc needs SR  --> used extension method DispatchEmailRequestExtensions
+
+            //var message = new SendGridMessage()
+            //{
+            //    From = new EmailAddress(),
+            //    ReplyTo = new EmailAddress(),
+            //    Subject = request.Subject,
+            //    PlainTextContent = request.Content
+            //};
+
+            //message.AddTo(request.RecipientEmail, request.RecpientName);
+            //var response = await this.client.SendEmailAsync(message);
+            //return new DispatchEmailResponse(request);

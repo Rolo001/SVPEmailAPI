@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Svp.Email.SendGrid", "Svp.E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Svp.Email.UnitTests", "Svp.Email.UnitTests\Svp.Email.UnitTests.csproj", "{07E4653B-7ADB-4E85-8491-677E46947EF6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Svp.Api", "Svp.Api\Svp.Api.csproj", "{6DB232E7-80D4-4BE7-8B97-E9AFBD592E4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{07E4653B-7ADB-4E85-8491-677E46947EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07E4653B-7ADB-4E85-8491-677E46947EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07E4653B-7ADB-4E85-8491-677E46947EF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DB232E7-80D4-4BE7-8B97-E9AFBD592E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DB232E7-80D4-4BE7-8B97-E9AFBD592E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DB232E7-80D4-4BE7-8B97-E9AFBD592E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DB232E7-80D4-4BE7-8B97-E9AFBD592E4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -3,6 +3,7 @@
     using System;
     using System.Diagnostics;
     using System.Threading.Tasks;
+    using Svp.Email.Classes.Exceptions;
     using Svp.Email.Interfaces;
 
     public class EmailDispatcher : IEmailDispatcher
@@ -15,6 +16,8 @@
             Console.WriteLine("EmailDispatcher constructor initialization");
             this._dispatcher = dispatcher;
         }
+
+
 
         public async Task<DispatchEmailResponse> Dispatch(DispatchEmailRequest request)
         {

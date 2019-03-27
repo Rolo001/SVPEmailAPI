@@ -6,7 +6,6 @@
 
     public class DispatchEmailResponse
     {
-
         //Constructors
 
         public DispatchEmailResponse(DispatchEmailRequest request) : this(request, new string[] { }) 
@@ -20,12 +19,12 @@
             Debug.Assert(request != null);
             Debug.Assert(errors != null);
 
-            this.IsSucces = errors.Length > 0;
+            this.IsSuccess = errors.Length > 0;
             this.Request = request;
             this.Errors = errors;
         }
 
-        //internal static object / Temporary return data
+        //internal static object / Temporary return data, Add to extensions
         public static DispatchEmailResponse CreateFailed(DispatchEmailRequest request)
         {
             Console.WriteLine("Create Failed method: DispatchEmailResponse ");
@@ -38,7 +37,7 @@
             throw new NotImplementedException();
         }
 
-        public bool IsSucces { get; private set; }
+        public bool IsSuccess { get; private set; }
         public string[] Errors { get; private set; }
         public DispatchEmailRequest Request { get; private set; }
     }

@@ -1,8 +1,8 @@
-﻿using System;
-using System.Runtime.Serialization;
-
-namespace Svp.Email.Classes
+﻿namespace Svp.Email.Classes.Exceptions
 {
+    using System;
+    using System.Runtime.Serialization;
+
     [Serializable]
     internal class EmailDispatcherException : Exception
     {
