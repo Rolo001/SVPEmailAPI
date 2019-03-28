@@ -17,8 +17,6 @@
             this._dispatcher = dispatcher;
         }
 
-
-
         public async Task<DispatchEmailResponse> Dispatch(DispatchEmailRequest request)
         {
             var result = DispatchEmailResponse.CreateFailed(request); //Overload CreateFailed 

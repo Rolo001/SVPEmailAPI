@@ -11,7 +11,6 @@
 
             EmailDispatcher dispatcher = new EmailDispatcher(null);
             
-
             Console.ReadKey();
         }
     }

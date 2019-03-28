@@ -21,6 +21,8 @@
         {
         }
 
+
+        //// recommended use!
         public EmailDispatcherException(string message, Exception innerException) : base(message, innerException)
         {
         }
