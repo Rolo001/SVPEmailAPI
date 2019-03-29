@@ -1,8 +1,11 @@
-﻿namespace Svp.Data.Classes.Interfaces
+﻿namespace Svp.Data.Interfaces
 {
+    using Svp.Data.Classes;
+    using System.Threading.Tasks;
 
-    interface IUserGateway
+    public interface IUserGateway
     {
-        void Save(SaveUserRequest request);
+        Task Save(SaveUserRequest request);
+        Task<string> GetUserDetail(int ID);
     }
 }

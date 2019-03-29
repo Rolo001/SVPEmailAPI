@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Svp.Api", "Svp.Api\Svp.Api.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Svp.Data", "Svp.Data\Svp.Data.csproj", "{39ED35B1-775E-4FDC-A0E5-94DDF3CF63CC}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "YOUSOURCE", "YOUSOURCE\YOUSOURCE.sqlproj", "{65FF31F5-B98D-451B-A373-10EB8F2762F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Svp.Services", "Svp.Services\Svp.Services.csproj", "{8E5144E9-F9C4-4D67-A6F4-C068EDC59683}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,16 @@ Global
 		{39ED35B1-775E-4FDC-A0E5-94DDF3CF63CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39ED35B1-775E-4FDC-A0E5-94DDF3CF63CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39ED35B1-775E-4FDC-A0E5-94DDF3CF63CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FF31F5-B98D-451B-A373-10EB8F2762F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FF31F5-B98D-451B-A373-10EB8F2762F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FF31F5-B98D-451B-A373-10EB8F2762F0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{65FF31F5-B98D-451B-A373-10EB8F2762F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FF31F5-B98D-451B-A373-10EB8F2762F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FF31F5-B98D-451B-A373-10EB8F2762F0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8E5144E9-F9C4-4D67-A6F4-C068EDC59683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5144E9-F9C4-4D67-A6F4-C068EDC59683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5144E9-F9C4-4D67-A6F4-C068EDC59683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5144E9-F9C4-4D67-A6F4-C068EDC59683}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

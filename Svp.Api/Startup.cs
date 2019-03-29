@@ -5,6 +5,11 @@
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
+    using Svp.Data.Classes;
+    using Svp.Data.Classes.CommandFactory;
+    using Svp.Data.Interfaces;
+    using Svp.Services.Classes;
+    using Svp.Services.Interfaces;
 
     public class Startup
     {
@@ -20,6 +25,12 @@
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddSingleton<IConfiguration>(Configuration);
+
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserGateway, UserGateway>();
+            services.AddScoped<IConnectionStringProvider, ConnectionStringProvider>();
+            services.AddScoped<IUserSqlCommandFactory, UserSqlCommandFactory>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
