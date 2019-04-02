@@ -15,6 +15,10 @@
                 result.ReplyTo = new EmailAddress();
                 result.Subject = request.Subject;
                 result.PlainTextContent = request.Content;
+
+                //create single mail
+                
+
             }
             return result;
         }

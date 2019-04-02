@@ -15,6 +15,7 @@
         public DataGatewayException(Exception e)
         {
             this.e = e;
+            Console.WriteLine(e);
         }
 
         public DataGatewayException(string message) : base(message)

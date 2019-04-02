@@ -17,9 +17,8 @@
             this.connectionString = provider.GetDbConnectionString();
             userCommand = UserCommand;
         }
-
-
-        public async Task Save(SaveUserRequest request) // method to sve into datastore or database
+        
+        public async Task Save(SaveUserRequest request) // method to sve/read into/from datastore or database
         {
             try
             {
@@ -39,7 +38,7 @@
         }      
         
         /// test method 
-        public async Task<string> GetUserDetail(int ID) // method to sve into datastore or database
+        public async Task<string> GetUserDetail(int ID) // method to sve/read into/from datastore or database
         {
             string result;
             try
@@ -57,11 +56,10 @@
                         reader.Read();
                         result = reader.GetValue(0).ToString();
                         reader.Close();
-                        
                     }
                 }
                 return result;
-}
+            }
             catch (Exception e)
             {
                 throw new DataGatewayException(e);
