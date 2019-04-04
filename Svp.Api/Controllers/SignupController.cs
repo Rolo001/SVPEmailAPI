@@ -3,6 +3,7 @@
     using Microsoft.AspNetCore.Mvc;
     using Svp.Api.Controllers.Classes;
     using Svp.Services.Interfaces;
+    using Svp.Services.Models;
     using System;
     using System.Threading.Tasks;
 
@@ -18,15 +19,23 @@
         }
 
         [HttpPost]
-        public async Task<ActionResult> Signup([FromBody] SignupRequest request)
+        public async Task<ActionResult> Signup([FromBody] SignupWebRequest webRequest)
         {
             try
             {
+                var request = new SignupRequest()
+                {
+                    Email = webRequest.Email,
+                    Name = webRequest.Name,
+                    Password = webRequest.Password
+                };
+                await service.AddUserAsync(request);
                 return this.Ok();
             }
             catch (Exception e)
             {
                 return this.StatusCode(500);
+                throw e;
             }
         }
 

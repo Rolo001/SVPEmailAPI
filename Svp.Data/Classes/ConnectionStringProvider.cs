@@ -1,6 +1,6 @@
-﻿using Svp.Data.Interfaces;
-namespace Svp.Data.Classes
+﻿namespace Svp.Data.Classes
 {
+    using Svp.Data.Interfaces;
     using Microsoft.Extensions.Configuration;
 
     public class ConnectionStringProvider : IConnectionStringProvider

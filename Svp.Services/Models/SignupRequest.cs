@@ -1,6 +1,6 @@
-﻿namespace Svp.Data.Classes
+﻿namespace Svp.Services.Models
 {
-    public class SaveUserRequest
+    public class SignupRequest
     {
         public string Email { get; set; }
         public string Name { get; set; }

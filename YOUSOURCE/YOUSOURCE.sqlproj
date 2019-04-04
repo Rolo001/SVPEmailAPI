@@ -63,6 +63,7 @@
   <ItemGroup>
     <Build Include="Tables\User.sql" />
     <Build Include="StoredProcedures\spGetUser.sql" />
+    <Build Include="StoredProcedures\spAddUser.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="YOUSOURCE.refactorlog" />

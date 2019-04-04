@@ -2,7 +2,7 @@
 {
     using System.ComponentModel.DataAnnotations;
 
-    public class SignupRequest
+    public class SignupWebRequest
     {
         [Required]
         [EmailAddress]

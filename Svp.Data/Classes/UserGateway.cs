@@ -3,6 +3,7 @@
     using Svp.Data.Classes.CommandFactory;
     using Svp.Data.Classes.Exceptions;
     using Svp.Data.Interfaces;
+    using Svp.Data.Model;
     using System;
     using System.Data.SqlClient;
     using System.Threading.Tasks;
@@ -18,7 +19,7 @@
             userCommand = UserCommand;
         }
         
-        public async Task Save(SaveUserRequest request) // method to sve/read into/from datastore or database
+        public async Task AddUser(User request) // method to sve/read into/from datastore or database
         {
             try
             {
@@ -27,7 +28,11 @@
                     connection.Open();
                     using (var transaction = connection.BeginTransaction())
                     {
+                        var command = this.userCommand.AddUserSqlCommand(request);
+                        command.Connection = connection;
+                        command.Transaction = transaction;
 
+                        await command.ExecuteNonQueryAsync();
                     }
                 }
             }
@@ -37,7 +42,6 @@
             }
         }      
         
-        /// test method 
         public async Task<string> GetUserDetail(int ID) // method to sve/read into/from datastore or database
         {
             string result;
