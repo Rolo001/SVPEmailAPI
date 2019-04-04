@@ -6,9 +6,13 @@
     using Svp.Email.Classes.Exceptions;
     using Svp.Email.Interfaces;
 
-    public class EmailDispatcher : IEmailDispatcher
+    public class EmailDispatcher 
     {
         private readonly IEmailDispatcher _dispatcher;
+
+        public EmailDispatcher()
+        {
+        }
 
         public EmailDispatcher(IEmailDispatcher dispatcher)
         {

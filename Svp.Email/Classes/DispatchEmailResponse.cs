@@ -24,6 +24,10 @@
             this.Errors = errors;
         }
 
+        public bool IsSuccess { get; private set; }
+        public string[] Errors { get; private set; }
+        public DispatchEmailRequest Request { get; private set; }
+
         //internal static object / Temporary return data, Add to extensions
         public static DispatchEmailResponse CreateFailed(DispatchEmailRequest request)
         {
@@ -36,9 +40,5 @@
             Console.WriteLine("Create Failed method (overload): DispatchEmailResponse ");
             throw new NotImplementedException();
         }
-
-        public bool IsSuccess { get; private set; }
-        public string[] Errors { get; private set; }
-        public DispatchEmailRequest Request { get; private set; }
     }
 } 
